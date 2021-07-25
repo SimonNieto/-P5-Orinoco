@@ -237,7 +237,6 @@ btnEnvoyerForm.addEventListener("click", (e) => {
   ) {
     localStorage.setItem("FormulaireValue", JSON.stringify(contact));
     localStorage.removeItem("produit");
-    window.location.href = "validation.html";
   } else {
   }
   ///////////////////Fin control form//////////////
