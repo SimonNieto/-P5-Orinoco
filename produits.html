@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orinoco - Nos produits</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container mx-auto">
+      <header class="border rounded bg-pink">
+        <nav class="navbar navbar-dark">
+          <a href="./index.html">
+            <img class="h-20" src="./img/logo.png" alt="Logo" />
+          </a>
+
+          <a href="panier.html">Mon Panier</a>
+        </nav>
+      </header>
+      <section class="flex border rounded bg-pink">
+        <div class="panel-body flex">
+          <div class="col-md-6">
+            <div class="pro-img-details">
+              <img
+                id="product-img"
+                src="https://via.placeholder.com/550x380/FFB6C1/000000"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4 class="pro-d-title" id="product-name"></h4>
+            <p id="product-description"></p>
+
+            <div class="m-bot15">
+              <strong>Price : </strong>
+              <span id="product-price" class="pro-price"> $300.00</span>
+            </div>
+            <p class="">Choisir la couleur de votre produit :</p>
+            <div class="grid w-full gap-4 mt-4">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="product-select"
+              >
+                <option selected>Choisir une couleur</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quantité</label>
+              <input
+                type="quantiy"
+                placeholder="1"
+                class="form-control quantity"
+              />
+            </div>
+            <p>
+              <button
+                class="btn btn-round btn-danger"
+                type="submit"
+                id="btn-envoyer"
+              >
+                <i class="fa fa-shopping-cart"></i>Ajouté au panier
+              </button>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/produit.js"></script>
+  </body>
+</html>

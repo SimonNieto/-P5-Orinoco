@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orinoco - Panier</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/panier.css" />
+    <script src="https://use.fontawesome.com/6943a6b428.js"></script>
+  </head>
+
+  <body>
+    <div class="container mx-auto">
+      <nav class="border rounded navbar navbar-dark bg-pink">
+        <a href="./index.html">
+          <img class="h-20" src="./img/logo.png" alt="Logo" />
+        </a>
+
+        <a href="panier.html">Mon Panier</a>
+      </nav>
+      <div class="mt-1">
+        <div id="container-panier" class="border rounded bg-pink">
+          <div class="row">
+            <div class="col-12">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Product</th>
+                      <th scope="col">Option</th>
+                      <th scope="col" class="text-center">Quantity</th>
+                      <th scope="col" class="text-right">Price</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="container-body-panier"></tbody>
+                  <tfoot id="container-foot-panier">
+                    <tr>
+                      <th scope="col">Total</th>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                      <th scope="row"></th>
+                      <th id="total-price"></th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/panier.js"></script>
+  </body>
+</html>
